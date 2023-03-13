@@ -1,0 +1,22 @@
+  {{#each data.clubs as |club|}}
+  <tr>
+    <td>{{name}}</td>
+    <td>{{area.name}}</td>
+    <td>
+      {{#if crestUrl}}
+      <img class="image" src="{{crestUrl}}" name="urlImage"/>
+      {{else}}
+      <img class="image" src="{{crestLocal}}" name="localImage">
+      {{/if}}
+    </td>
+    <td>
+      <button class="btn btn-outline-primary" onclick="location.href='view/{{tla}}'">View</button>
+      <button class="btn btn-outline-primary" onclick="location.href='edit/{{tla}}'">Edit</button>
+      <button class="btn btn-outline-primary" onclick="location.href='delete/{{tla}}'">Delete</button>
+    </td>
+    </tr>
+  {{/each}}
+
+
+
+     
