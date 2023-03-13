@@ -1,0 +1,33 @@
+body{
+  background-color: rgb(60, 8, 145);
+  margin: 0.5px;
+};
+
+
+h1{
+  color: white;
+};
+
+h2{
+  color:white;
+}
+
+.image {
+  height: 75px;
+  width: 75px;
+}
+.titulo {
+  color: aqua;
+}
+.texto {
+  color: white;
+}
+* {
+  color: white;
+}
+.error{
+  font-size: 2em;
+  color: red;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
