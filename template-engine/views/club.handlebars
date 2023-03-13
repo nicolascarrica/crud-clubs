@@ -1,0 +1,70 @@
+<div class="container">
+  <h2 class="text-center">{{data.name}}<strong></strong></h2>
+</div>
+<form class="row g-3 d-flex p-2">   
+    <div class="col-md-1">
+        <label for="id" class="form-label">id</label>
+        <input type="text" class="form-control" id="id" name="id" value="{{data.id}}""" disabled>
+    </div>
+    <div class="col-md-4">
+        <label for="name" class="form-label">Club Name</label>
+        <input type="text" class="form-control" id="name" value="{{data.name}}""" disabled>
+    </div>
+    <div class="col-md-2">
+        <label for="short-name" class="form-label">Short Name</label>
+        <input type="text" class="form-control" id="short-name" value="{{data.shortName}}""" disabled>
+    </div>    
+    <div class="col-md-2">
+        <label for="abreviated-name" class="form-label">Acronym</label>
+        <input type="text" class="form-control" id="tla" name="tla" value="{{data.tla}}""" disabled>
+    </div>     
+    <div class="col-md-3">
+        <label for="country" class="form-label">Country</label>
+        <input type="text" class="form-control" id="country" value="{{data.area.name}}""" disabled>
+    </div>     
+    <div class="col-md-3">
+        <label for="address" class="form-label">Address</label>
+        <input type="text" class="form-control" id="address" value="{{data.address}}""" disabled>
+    </div>
+    <div class="col-md-3">
+        <label for="phone" class="form-label">Phone Number</label>
+        <input type="text" class="form-control" id="sphone" value="{{data.phone}}""" disabled>
+    </div>    
+    <div class="col-md-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="text" class="form-control" id="email" value="{{data.email}}""" disabled>
+    </div>     
+    <div class="col-md-3">
+        <label for="web-site" class="form-label">Web Site</label>
+        <input type="text" class="form-control" id="web-site" value="{{data.website}}""" disabled>
+    </div> 
+    <div class="col-md-3">
+        <label for="stadium" class="form-label">Stadium</label>
+        <input type="text" class="form-control" id="stadium" value="{{data.venue}}""" disabled>
+    </div> 
+    <div class="col-md-3">
+        <label for="club-colots" class="form-label">Club Colors</label>
+        <input type="text" class="form-control" id="club-colors" value="{{data.clubColors}}""" disabled>
+    </div> 
+    <div class="col-md-3">
+        <label for="founded" class="form-label">Year of foundation</label>
+        <input type="text" class="form-control" id="founded" value="{{data.founded}}""" disabled>
+    </div> 
+   <div class="col-3">
+        {{#if data.crestUrl}}
+        <img class="rounded mx-auto d-block" src="{{data.crestUrl}}" alt="crest-{{data.name}} ">
+        {{else}}
+        <img class="rounded mx-auto d-block" src="{{data.crestLocal}}" alt="crest-{{data.name}} ">
+        {{/if}}
+    </div>    
+
+    <div class="col-2">
+        <a href="/" class="btn btn-primary justify-content-end" id="button-back" value="retroceder">Back</a>
+    </div>
+
+</form>
+    
+</div>
+
+
+    
