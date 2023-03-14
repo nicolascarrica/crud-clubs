@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "crub-clubs for r/argentinaprograma",
   "main": "index.js",
+  "nodemonConfig": {
+    "ignore": [
+      "data/*.json",
+      "README"
+    ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cd ./template-engine && nodemon --inspect index.js"
